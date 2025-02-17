@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> login page</title>
+<link rel="stylesheet" type="text/css" href="./style/style.css">
+<style type="text/css">
+body{
+	margin:0;
+	color:rgba(46, 49, 49, 1);
+	font:600 16px/18px 'georgia',serif;
+	
+	}
+a{text-decoration:none;color:black;}
+
+
+.label{
+  text-transform:uppercase;}
+
+.login-html{
+         min-height:100vh;}
+form{
+    width:400px;
+    height:80%;
+    background:rgba(46, 49, 49, .2);
+	margin:30px auto;
+	position:relative;
+	padding:50px 90px 50px 50px;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.10);
+	}
+hr{margin:10px 0;}
+.input {
+    margin-top:5px;
+    font-size:15px;
+    border:none;
+	width:100%;
+	color:black;
+	display:block;
+    padding:15px 20px;
+	border-radius:25px;
+	background:#fff;
+	}
+input[type="button"],input[type="submit"]{
+     cursor:pointer;
+     background:rgba( 78, 81, 128,1); 
+     width:50%;
+     margin-left:25%;
+     color:#fff;
+	 font-family:'georgia',serif;
+	 }
+										 
+input[type="submit"]:focus{background-color:black;}
+input[type="button"]:focus{background-color:black;}
+.main{
+	 background: url(banner2.jpg);
+	 height: 400px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;}
+</style>
+<body>
+<header class="main">
+<div class="a b">
+	<div>
+		<img src="./images/logo1.png" >		
+	</div>	
+    <div>
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li class="active"><a href="login.html">Login</a></li>
+			<li><a href="reservation.html">Reservation</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+    </div>
+</div>
+</header>
+
+ <div class="login-html">
+  <form action="action-page.php" method="POST">
+     <h1>Welcome back!</h1>
+     <hr>
+     <label for="uname"class="label">User Name:</label><br>
+     <input type="text" id="uname" class="input" name="uname" placeholder="username or Email" required=""><br><br>
+     <label for="pw" class="label"> Password:</label><br>
+     <input type="password" id="pw" name="pw" class="input" placeholder="Password" required=""><br><br>
+      <label for="remember me">
+      <input type="checkbox" name="remeber me" id="rember me" value="remeberme">&nbsp;Remeber me</label><br>
+      <input type="submit"  class="input label" value="log in"><br>
+      <a href="#forgghjot">Forgot Password?</a><hr><br>
+	 &nbsp;&nbsp;don't have an acount
+	 <a href="#fshggrgh"> <input type="button" class="input label" value="Register"></a>
+ </div>
+</form>
+<footer>
+       <div class="maincontent">
+          <div>
+        	  <h2>FIND US ON</h2>
+        	    <div>
+        		    <a href="#"><span><img src="./images/insta.jpg" height="40px"></span></a>
+        		    <a href="#"><span><img src="./images/fb.jpg" height="40px"></span></a>
+        		    <a href="#"><span><img src="./images/twitter.png" height="40px"></span></a>
+        		</div>
+          </div>
+           <div>
+              <h2>VS hotel</h2>
+           </div>
+           <div>
+              <h2>Address</h2>
+                <div>
+            	    <span><img src="./images/map.jpg" height="40px"></span>
+            		<span  class="white">Colombo</span>
+                </div>
+                <div>
+            	    <span><img src="./images/phone.png"height="40px"></span>
+            		<span class="white">+94777786897</span>
+                </div>
+            </div>
+       </div>
+ </footer>
+</body>
+</html>
