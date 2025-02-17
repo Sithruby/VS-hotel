@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reservation</title>
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<style>
+
+	*{
+	    padding: 0;
+	    margin: 0;
+	    box-sizing: border-box;
+        }
+	.required:after {
+               content:" *";
+               color: red;
+               }
+    
+
+	form{display: flex;
+		 flex-direction: column;
+	 	 height:80%;
+         background:rgba(46, 49, 49, .2);
+	     margin:30px auto;
+	     position:relative;
+	     padding:50px 90px 50px 50px;}
+    hr{margin:18px 0;}
+
+	.wrap{
+         min-height:100vh;
+	     display:flex;
+	     justify-content:center;
+	     align-items:center;
+	     }
+	label{font-weight: bold;}
+
+	.padding{padding:10px;}
+
+	input{padding:5px 40px;
+		  border-radius:7px;
+		  font-size:15px;
+          border:none;
+         }
+	input[type="submit"]{
+		 padding:15px 20px;
+	     border-radius:25px;
+	     cursor:pointer;
+         background:rgba( 78, 81, 128,1); 
+         width:50%;
+         margin-left:120px;
+         color:#fff;
+	     font-family:'georgia',serif;
+	     font-size:20px;
+	    }
+	 
+    
+	.main{
+	  	background: url(./images/banner3.jpg);
+	  	height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+  </style>
+</head>
+<body>
+<header class="main">
+	<div class="a b">
+	<div>
+		<img src="./images/logo1.png" >		
+	</div>	
+    <div>
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li class="active"><a href="reservation.html">Reservation</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+    </div>
+</div>
+</header>
+<div class="wrap">
+<form action="action.php" method="POST">
+	<fieldset>
+	<div class="padding">
+	     <br>
+		 <br>
+		<h1>Hotel Booking</h1>
+		<hr>
+        <label for="fname" class="required">First Name:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" name="firstname" id="fname" placeholder="Enter your firstname"><br><br>
+		<label for="lname" class="required">Last Name:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" name="lastname" id="lname" placeholder="Enter your lastname"><br><br>
+		<label for="email" class="required">E-mail:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="email" id="email" name="email" placeholder="ex:name@example.com"><br><br>
+		<label for="nic" class="required">N.I.C No:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="nic" name="nic"><br><br>
+		<label for="pnum">Phone Number:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="tel" id="pnum" name="pnum" placeholder="ex:123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+		<label for="Adate">Arrival Date:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+		<input type="date" name="adate" id="Adate"><br><br>
+		<label for="Ddate">Departure Date:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<input type="date" name="Ddate" id="Ddate">	
+        <br><br>
+		<label for="adults">Number of Adults  :</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="text" id="adults" name="adults no" placeholder="ex:05"><br><br>
+		<label for="kids">Number of kids(if there are any):</label>
+		<input type="text" id="kids" name="kids no" placeholder="ex:03"><br><br>
+		<label for="pickup" class="required">Free Pickup?</label><br>
+		<input type="radio" name="pick" id="pickup">
+		<label for="pickup">Yes Please!-Pick me up on arrival</label><br>
+        <input type="radio" name="pick" id="pickup">
+		<label for="pickup">No Thanks-I will make my own way there</label><br><br>
+		<label for="special">Special Requests:</label><br><br>
+		<textarea cols=50 rows=5>type here...</textarea>
+		<br><br>
+		<input type="submit" value="submit"><br>
+		
+	</fieldset>
+
+</form>
+</div>
+<footer>
+       <div class="maincontent">
+          <div>
+        	  <h2>FIND US ON</h2>
+        	    <div>
+        		    <a href="#"><span><img src="./images/insta.jpg" height="40px"></span></a>
+        		    <a href="#"><span><img src="./images/fb.jpg" height="40px"></span></a>
+        		    <a href="#"><span><img src="./images/twitter.png" height="40px"></span></a>
+        		</div>
+          </div>
+           <div>
+              <h2>VS hotel</h2>
+           </div>
+           <div>
+              <h2>Address</h2>
+                <div>
+            	    <span><img src="./images/map.jpg" height="40px"></span>
+            		<span  class="white">Colombo</span>
+                </div>
+                <div>
+            	    <span><img src="./images/phone.png"height="40px"></span>
+            		<span class="white">+94777786897</span>
+                </div>
+            </div>
+       </div>
+ </footer>
+</body>
+</html>
