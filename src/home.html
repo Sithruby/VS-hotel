@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<style>
+	*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    }
+	header{
+	margin:0;
+	padding: 0;
+    }
+	.main {  
+	background-image:url("./images/banner1.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+	.a{
+	display: flex;
+	justify-content: space-between;
+	background-color:rgba(255,255,255,0.4);
+	font-weight: bold;
+	font-family:"Georgia", serif;
+    }
+    .b{
+    position: sticky;
+    top:0;}
+	div img{padding-top: 10px;}
+	nav ul{margin-left: 150px;
+		   margin-top: 50px;}
+	nav ul li{display: inline;
+		      float:left;}
+	nav ul li a{
+	display: block;
+	text-align: center;
+    padding: 10px 50px;
+	text-decoration: none;
+	color: black;}
+    header nav ul li a:hover:not(.active) { background-color:rgb(  43, 96, 222);}
+    .active {
+    background-color:rgb( 48, 144, 199);
+    }
+   .display{
+	display: inline-flex;
+	margin: 30px 40px;}
+   .border{background-color: #fff;}
+   .border p{ font: italic 1.2em "Fira Sans", serif;}
+   .border h1{font-family: Lucida Bright;}
+   .first{margin: 10px 50px;background-color: rgba(218, 223, 225, 1);}
+   footer
+{
+	margin-top: 50px;
+	bottom: 0;
+	width: 100%;
+	background:rgb(95, 158, 160);
+}
+.maincontent
+{
+	display: flex;
+	justify-content: space-between;
+}
+footer h2{color: white;}
+.white
+{
+	color: white;
+}
+</style>
+</head>
+<body>
+<header class="main">
+<div class="a b">
+	<div>
+		<img src="./images/logo1.png" >		
+	</div>	
+    <div>
+	<nav>
+		<ul>
+			<li class="active"><a href="home.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="reservation.html">Reservation</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+    </div>
+</div>
+</header>
+<div class="display">
+	<div class="border">
+		<h1>VS Hotel</h1>
+		<p>Revel in our histories. Chase our mysteries. Discover extraordinary places. Unwind in our spaces. At VS Hotels, we promise you are in good hands. With the largest family of hotels and villas across Sri Lanka, we are delighted to welcome you into our homes found on the mountains to the coastline, and everywhere else in between.</p>
+		<hr>
+		<h1>Why Book with us</h1><br>
+		<p>24 HR FREE BOOKING & CANCELLATION</p>
+		<p>BEST RATE GUARANTEE</p>
+		<p>SAFE & SECURE HOTEL</p>
+	</div>
+	<div>
+		<img src="./images/home1.jpg" width="90%">
+	</div>
+</div>
+
+	<h1 style="margin:3px 30%">THE VS HOTEL EXCLUSIVES</h1>
+	<h2 style="margin:5px 20%">Explore The VS Hotel signature offers and packages at our hotel</h2>
+	<div class="display">
+	<div class="first">
+		<img src="./images/home2.jpg" width="300px" height="200px">
+		<hr>
+		<h3>WITH OUR COMPLIMENTS</h3>
+		<p>Book a stay of 3 nights and enjoy a complimendary night on us.</p>
+		<br>
+	</div>
+	<div class="first">
+		<img src="./images/home3.jpg" width="300px" height="200px">
+		<hr>
+		<h3>LINGER LONGER</h3>
+		<P>Stay two nights or more and enjoy up to 15% off Best Available Rate.</P>
+		<br><br>
+	</div>
+	<div class="first">
+		<img src="./images/home4.jpg" width="300px"height="200px">
+		<hr>
+		<h3>STAY AND PLAY</h3>
+		<p>Delight the family with a change of scenery that includes luxurious accommodations.</p>
+        <br><br>
+	</div>
+</div>
+<footer>
+        	<div class="maincontent">
+        		<div>
+        	    <h2>FIND US ON</h2>
+        	    
+        	    	
+        	        <div>
+        		        <a href="#"><span><img src="./images/insta.jpg" height="40px"></span></a>
+        		        <a href="#"><span><img src="./images/fb.jpg" height="40px"></span></a>
+        		        <a href="#"><span><img src="./images/twitter.png" height="40px"></span></a>
+        		    </div>
+                
+              </div>
+            <div>
+            	<h2>VS hotel</h2>
+            </div>
+            <div>
+            	<h2>Address</h2>
+                    <div>
+            			<span><img src="map.jpg" height="40px"></span>
+            			<span  class="white">Colombo</span>
+                    </div>
+                    <div>
+            			<span><img src="phone.png"height="40px"></span>
+            			<span class="white">+94777786897</span>
+                   </div>
+                   </div>
+               </div>
+           </footer>
+</body>
+</html>
